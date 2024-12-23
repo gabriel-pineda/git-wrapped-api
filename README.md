@@ -11,7 +11,7 @@ Git Wrapped is the API that powers [git-wrapped.com](https://git-wrapped.com) (G
 1. Node.js and npm/yarn
 2. GitHub Personal Access Token (Classic)
    - [How to create a GitHub Personal Access Token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-token-classic)
-   - Required permissions: `public_repo`, `read:user`
+   - Required permissions: `public_repo`, `read:user`, `repo:status` (if you need to include private repo commit status)
 
 ### Environment Setup
 
