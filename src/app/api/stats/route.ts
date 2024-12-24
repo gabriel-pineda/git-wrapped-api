@@ -86,7 +86,7 @@ const MONTH_NAMES = [
  * @param request - Incoming HTTP request with 'username' query parameter
  * @returns JSON response with processed GitHub statistics
  */
-export default async function GET(request: Request): Promise<NextResponse> {
+export async function GET(request: Request): Promise<NextResponse> {
   try {
     // Extract username from query parameters
     const { searchParams } = new URL(request.url);
@@ -225,4 +225,4 @@ export default async function GET(request: Request): Promise<NextResponse> {
       { status: 500 }
     );
   }
-}
+} 

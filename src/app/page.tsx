@@ -1,10 +1,10 @@
+'use client'
+
 import Image from "next/image";
-import { Inter } from "next/font/google";
 import { useState } from "react";
 import dynamic from "next/dynamic";
 
 const ReactJson = dynamic(() => import("react-json-view"), { ssr: false });
-const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   const [username, setUsername] = useState("");
@@ -35,9 +35,7 @@ export default function Home() {
   };
 
   return (
-    <main
-      className={`min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 text-gray-100 ${inter.className}`}
-    >
+    <main className="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 text-gray-100">
       <style jsx global>{`
         /* Modern scrollbar styling */
         ::-webkit-scrollbar {
@@ -227,4 +225,4 @@ export default function Home() {
       </div>
     </main>
   );
-}
+} 
