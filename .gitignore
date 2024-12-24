@@ -24,6 +24,12 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+# packge-locks
+bun.lockb
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
 # local env files
 .env*.local
 

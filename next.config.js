@@ -2,7 +2,13 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ["ph-files.imgix.net"],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'ph-files.imgix.net',
+        pathname: '/**',
+      },
+    ],
   },
 };
 
